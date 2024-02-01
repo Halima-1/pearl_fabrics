@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        button{
+            padding: 7px 25px;
+            border: none;
+            color: rgb(251, 252, 253);
+            background-color: goldenrod;
+            border-radius: 15px;
+            margin: 10px;
+        }
+        #reset{
+            padding: 7px 25px;
+            border: none;
+            color: rgb(251, 252, 253);
+            background-color: rgb(165, 32, 218);
+            border-radius: 15px;
+            margin: 10px;
+        }
+
+        #container{
+            width: 320px;
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+            border-radius: 2px 20px;
+            margin-top: 50px;
+            background-color: rgb(253, 238, 247);
+            border: 1px solid rgb(136, 105, 105);
+            box-shadow: 1px 2px 2px 1px;
+
+        }
+        #counter{
+            border: none;
+            text-align: center;
+            width: 100%;
+            padding: 26px 0;
+            font-size: 20px;
+            border-radius: 7px;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <i id="time"></i>
+        <input type="text" id="counter" placeholder="start"> <br>
+        <button id="increase"><b>+</b></button> 
+        <button id="reset"><b>reset</b></button>
+        <button id="decrease"><b>-</b></button>
+    </div>
+
+    <script>
+    const counter = document.getElementById('counter');
+    const  increment=   document.getElementById('increase');
+    const decrement = document.getElementById('decrease');
+    const reset = document.getElementById('reset');
+    const time =document.getElementById ('time');
+
+    var timme = new Date ()
+    time.innerHTML = timme.toLocaleTimeString();
+    let value =0;
+    increment.addEventListener('click', function(){
+        value += 1;
+        counter.value =`${value}.00`;
+    }
+    )
+
+    decrement.addEventListener('click', function(){
+        value -= 1;
+        counter.value =`${value}.00`;
+    })
+
+    reset.addEventListener('click', function(){
+        value =0;
+        counter.value =`${value}.00`;
+    })
+    </script>
+</body>
+</html>

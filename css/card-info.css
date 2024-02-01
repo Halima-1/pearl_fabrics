@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #E2D1F9;
+}
+
+li{
+    list-style: none;
+}
+.log{
+    margin:  10px 0;
+}
+.item{
+    display: flex;
+    justify-content: center;
+}
+.item2{
+    display: column;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+.flex-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flex-1{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-end;
+
+}
+.navbar{
+    background-color: rgb(44, 1, 44);;
+    padding: 5px;
+}
+
+.navbar-toggler{
+    background-color: rgb(44, 1, 44);
+    color: aliceblue;
+}
+
+.navbar-brand{
+    color: aliceblue;
+    margin: 0;
+}
+
+.nav-link{
+    color: aliceblue;
+}
+
+.nav-item a:hover{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.collapse{
+    height: 80px; 
+}
+
+.icon :hover{
+    background-color: #E2D1F9;
+}
+
+.border{
+    background-color: white;
+    color: black;
+    border-style: outset;
+    height: 400px;
+    padding: 20px;
+    box-shadow: 2px 1px 2px 2px;
+}
+
+.message{
+    text-align: center;
+}
+
+.btn{
+    background-color: rgb(44, 1, 44);;
+    border: none;
+}
+
+#mySwitch{
+    background-color: rgb(44, 1, 44);;
+    border: none;
+} 
+
+
+
+.add{
+    width: 24%;
+    height: 100%;
+    margin: 20px 0 10px 500px;
+    margin: auto;
+}
+
+.fa-credit-card{
+    color: rgb(233, 10, 10);
+}
+
+.fa-cc-visa{
+    color: rgb(2, 2, 70);
+}
+
+.fa-cc-mastercard{
+    color: rgb(197, 11, 11);
+}
+
+.second-row{
+    margin-top: 40px;
+}
+
+.col{
+    margin-bottom: 40px;
+}
+
+
+
+
